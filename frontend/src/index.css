@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #262626;
+  --secondary: #BD8C7D;
+  --accent: #4CB69F;
+  --text-dark: #262626;
+  --text-light: #F5F5F5;
+  --background-light: #FFFFFF;
+  --background-dark: #262626;
+  --card-light: #F5F5F5;
+  --card-dark: #333333;
+  --primary-light: #F5F5F5;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+}
+
+.dark body {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+/* Header styles are now defined directly in the Header component with Tailwind */
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.dark .card {
+  background-color: var(--card-dark);
+}
+
+.case-status-tag {
+  background-color: #262626;
+  color: #F5F5F5;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.timeline-item {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.timeline-item:not(:last-child) {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.advocate-card {
+  display: flex;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.advocate-card img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+.advocate-info {
+  padding: 1rem;
+  flex: 1;
+}
+
+.star-rating {
+  color: #BD8C7D;
+  display: flex;
+}
+
+.button-primary {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-primary:hover {
+  background-color: #3da68f;
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light);
+}
+
+.text-primary {
+  color: var(--primary);
+}

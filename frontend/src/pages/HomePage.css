@@ -1,0 +1,82 @@
+/* HomePage.css */
+.hero-section {
+  background-image: linear-gradient(to bottom, #ffffff, #f9fafb);
+}
+
+.feature-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+  background-color: rgba(76, 182, 159, 0.1);
+  color: #4CB69F;
+  border-radius: 9999px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.feature-description {
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.feature-link {
+  color: #4CB69F;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.feature-link:hover {
+  color: #3da68f;
+}
+
+.glossary-promo {
+  background-color: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.glossary-promo-content {
+  padding: 2rem;
+}
+
+.glossary-promo-examples {
+  background-color: #f0f9f7;
+  padding: 2rem;
+}
+
+.glossary-term-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.glossary-term-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.glossary-term-definition {
+  color: #6b7280;
+  font-size: 0.875rem;
+} 

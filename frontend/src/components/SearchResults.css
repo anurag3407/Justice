@@ -1,0 +1,135 @@
+.search-results-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #262626;
+}
+
+.case-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.case-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.status-tag {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.case-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.info-row {
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #262626;
+  margin-right: 0.25rem;
+}
+
+.case-timeline {
+  padding: 1.5rem;
+  background-color: #fafafa;
+}
+
+.timeline-container {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.timeline-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: #e5e7eb;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  transform: translateX(-50%);
+}
+
+.timeline-marker.active {
+  background-color: #4CB69F;
+}
+
+.timeline-content {
+  padding-left: 1rem;
+}
+
+.timeline-date {
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-description {
+  color: #4b5563;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.advocate-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #4CB69F;
+  color: white;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.advocate-button:hover {
+  background-color: #3da68f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .case-info-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+} 

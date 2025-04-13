@@ -3,10 +3,35 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.9",
+    "concurrently": "^8.2.2"
+  }
 }
+
+
+# Steps to push folders to GitHub:
+
+# 1. Initialize a Git repository (if not already done)
+git init
+
+# 2. Add all files and folders to the staging area
+git add .
+
+# 3. Commit the changes
+git commit -m "Initial commit"
+
+# 4. Add the remote repository URL
+git remote add origin <your-repository-url>
+
+# 5. Push the changes to the remote repository
+git push -u origin main

@@ -1,29 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/header'
-import Homepage from './pages/homepage'
-import Footer from './components/footer'
-import Results from './pages/results'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import CaseResultPage from './pages/CaseResultPage';
+import GlossaryPage from './pages/GlossaryPage';
+import AdvocatesPage from './pages/AdvocatesPage';
+import AccountPage from './pages/AccountPage';
+import CaseSummarizerPage from './pages/CaseSummarizerPage';
+import { AuthProvider } from './components/Header';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}>
-        <Header />
-      </div>
-      <div style={{ marginTop: '64px', marginBottom: '64px' }}>
-        <Homepage/>
-      </div>
-      <Results/>
-      <div style={{ position: 'fixed', bottom: 0, width: '100%', zIndex: 1000 }}>
-        <Footer />
-      </div>
-    </>
-  )
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/case-result" element={<CaseResultPage />} />
+          <Route path="/glossary" element={<GlossaryPage />} />
+          <Route path="/advocates" element={<AdvocatesPage />} />
+          <Route path="/account" element={<AccountPage />} />
+          <Route path="/case-summarizer" element={<CaseSummarizerPage />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
+  );
 }
 
-export default App
+export default App;
