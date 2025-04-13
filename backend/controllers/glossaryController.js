@@ -1,4 +1,4 @@
-const GlossaryTerm = require('../models/GlossaryTerm');
+const GlossaryTerm = require('../models/GlossaryTerms');
 
 // @desc    Get all glossary terms
 // @route   GET /api/glossary

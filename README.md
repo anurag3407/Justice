@@ -81,8 +81,13 @@ JusticeTrack was created to address several challenges in accessing justice:
 ## 👥 Hackathon Team
 
 - Developer / UX Designer
+<<<<<<< HEAD
 - Legal Researcher
 - Project Manager
+=======
+- frontend developer
+- blockchain and ai developer
+>>>>>>> f9b5262f9f8c46c7eb0974f908778624ece3c5fb
 - UI Designer
 
 ## 📝 License
@@ -99,4 +104,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Thank you for taking the time to explore JusticeTrack! We hope this platform inspires you to think about how technology can make legal systems more accessible and equitable for everyone. If you have any questions, feedback, or ideas for collaboration, feel free to reach out. Together, we can simplify access to justice and empower communities worldwide.
 
+<<<<<<< HEAD
 Happy coding and innovating! 🚀
+=======
+Happy coding and innovating! 🚀
+>>>>>>> f9b5262f9f8c46c7eb0974f908778624ece3c5fb
