@@ -97,3 +97,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 </div> 
 
 
+Thank you for taking the time to explore JusticeTrack! We hope this platform inspires you to think about how technology can make legal systems more accessible and equitable for everyone. If you have any questions, feedback, or ideas for collaboration, feel free to reach out. Together, we can simplify access to justice and empower communities worldwide.
+
+Happy coding and innovating! 🚀
