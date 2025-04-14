@@ -1,8 +1,111 @@
-# JusticeTrack: Legal Case Management System
+# JusticeTrack Frontend
 
-![JusticeTrack Logo](./src/assets/logo.png)
+This is the frontend application for JusticeTrack - a platform simplifying legal case tracking and management.
 
-JusticeTrack is a comprehensive legal case management system designed to help individuals navigate the complex justice system. This hackathon project provides tools for tracking cases, finding legal advocates, summarizing legal documents, and understanding legal terminology.
+## Local Development
+
+### Prerequisites
+
+- Node.js (v18 or newer)
+- npm or yarn
+
+### Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/anurag3407/Justice.git
+cd Justice/frontend
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn
+```
+
+3. Create a `.env` file in the frontend directory:
+```
+VITE_API_URL=http://localhost:5000
+```
+
+4. Start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## Deploying to Vercel
+
+### Option 1: Automatic Deployment via GitHub
+
+1. Push your code to GitHub if you haven't already:
+```bash
+git add .
+git commit -m "Preparing for Vercel deployment"
+git push
+```
+
+2. Login to [Vercel](https://vercel.com) and create a new project.
+
+3. Import your repository from GitHub.
+
+4. Configure the project:
+   - Framework Preset: Vite
+   - Root Directory: `frontend`
+   - Build Command: `npm run build` (this should be auto-detected)
+   - Output Directory: `dist` (this should be auto-detected)
+
+5. Set the environment variables:
+   - Add `VITE_API_URL` with the value of your backend API (e.g., `https://justice-backend.vercel.app`)
+
+6. Deploy the project.
+
+### Option 2: Manual Deployment with Vercel CLI
+
+1. Install the Vercel CLI:
+```bash
+npm install -g vercel
+```
+
+2. Login to Vercel:
+```bash
+vercel login
+```
+
+3. Navigate to the frontend directory:
+```bash
+cd frontend
+```
+
+4. Deploy to Vercel:
+```bash
+vercel
+```
+
+5. Follow the CLI prompts to complete deployment.
+
+## Project Structure
+
+- `src/components`: React components
+- `src/pages`: Page components
+- `src/api`: API service functions
+- `src/assets`: Static assets like images
+- `public`: Public static files
+
+## Available Scripts
+
+- `npm run dev`: Start development server
+- `npm run build`: Build production-ready app
+- `npm run preview`: Preview production build locally
+- `npm run lint`: Run ESLint
+
+## Environment Variables
+
+- `VITE_API_URL`: Backend API URL
 
 ## 🌟 Features
 
