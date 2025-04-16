@@ -12,7 +12,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "https://justice-backend.vercel.app/api/$1"
+      "dest": "https://justice-tracker.onrender.com/api/$1"
     },
     {
       "src": "/assets/(.*)",
@@ -31,6 +31,6 @@
     "silent": true
   },
   "env": {
-    "VITE_API_URL": "https://justice-backend.vercel.app"
+    "VITE_API_URL": "https://justice-tracker.onrender.com"
   }
 } 
